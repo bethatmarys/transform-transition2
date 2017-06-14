@@ -1,0 +1,125 @@
+.box {
+  background: red;
+  height: 100px;
+  margin: 100px;
+  transition: all 3s;
+  transition-timing: ease-in-out;
+  width: 100px;
+
+
+  &:hover {
+    transform: rotate(-180deg);
+  }
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Concert+One);
+
+h1 {
+  animation:glow 10s ease-in-out infinite;
+
+
+
+/* For less laggy effect, uncomment this:
+
+..animation:none;
+  -webkit-text-stroke:1px #fff;
+
+=========== */
+
+}
+
+
+
+* { box-sizing:border-box; }
+
+body {
+  background:#0a0a0a;
+  overflow:hidden;
+  text-align:center;
+}
+
+figure {
+  animation:wobble 5s ease-in-out infinite;
+  transform-origin:center center;
+  transform-style:preserve-3d;
+}
+
+@keyframes wobble {
+  0%,100%{ transform:rotate3d(1,1,0,40deg); }
+  25%{ transform:rotate3d(-1,1,0,40deg); }
+  50%{ transform:rotate3d(-1,-1,0,40deg); }
+  75%{ transform:rotate3d(1,-1,0,40deg); }
+}
+
+h1 {
+  display:block;
+  width:100%;
+  padding:40px;
+  line-height:1.5;
+  font:700 7em 'Concert One', sans-serif;
+  // text-transform:uppercase;
+  position:absolute;
+  color:#0a0a0a;
+}
+
+@keyframes glow {
+  0%,100%{ text-shadow:0 0 30px black; }
+  25%{ text-shadow:0 0 30px red; }
+  50%{ text-shadow:0 0 30px yellow; }
+  75%{ text-shadow:0 0 30px blue; }
+}
+
+h1:nth-child(2){ transform:translateZ(5px); }
+h1:nth-child(3){ transform:translateZ(10px);}
+h1:nth-child(4){ transform:translateZ(15px); }
+h1:nth-child(5){ transform:translateZ(20px); }
+h1:nth-child(6){ transform:translateZ(25px); }
+h1:nth-child(7){ transform:translateZ(30px); }
+h1:nth-child(8){ transform:translateZ(35px); }
+h1:nth-child(9){ transform:translateZ(40px); }
+h1:nth-child(10){ transform:translateZ(45px); }
+
+.square {
+  background: Khaki;
+  border-radius: 5px;
+  height: 150px;
+  margin: 100px;
+  transition: transform 1s;
+  width: 150px;
+}
+.square:hover {
+  transform: skewX(-20deg);
+}
+
+.oval{
+  height: 100px;
+  width:120px;
+  border-radius: 50px;
+  margin: 200px;
+  background: blue;
+  transition: all 1s ease-in-out;
+}
+.oval:hover{
+  transform: scale(5,2);
+  }
+
+  .bord{
+          padding: 0;
+          margin: 0;
+          -webkit-box-sizing: border-box;
+           }
+  .crossfd{
+          background: url("img/Lion_Transparent_PNG_Clip_Art_Image.png");
+          display: inline-block;
+          font:size: 0;
+               }
+  .crossfd img{
+                   -webkit-transition: opacity 1s ease-in-out;
+                   -moz-transition: opacity 1s ease-in-out;
+                   -o-transition: opacity 1s ease-in-out;
+                   transition: opacity 1s ease-in-out;
+                      }
+  .crossfd img:hover{
+                      opacity: 0;
+                                 }
